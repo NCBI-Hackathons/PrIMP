@@ -1,7 +1,15 @@
 #!/bin/bash
 
+# Create an Environment for Picrust
+conda create -n picrustenv python=2.7
+source activate picrustenv
+conda install -c bioconda picrust
+
 # Downlaod picrust files
 download_picrust_files.py
+
+source deactivate
+
 
 # Download and install qiime environment
 wget https://data.qiime2.org/distro/core/qiime2-2018.6-py35-linux-conda.yml
