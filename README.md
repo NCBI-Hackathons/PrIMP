@@ -1,6 +1,8 @@
 # BadStomach
 Definition of Metagenomic States that predispose individuals to infection
 
+Test String
+
 # GoodDoc -- A Template for Simple and Clear Documentation of Bioinformatics Code!
 
 ## Please cite our work -- here is the ICMJE Standard Citation:
