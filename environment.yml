@@ -7,6 +7,6 @@ dependencies:
   - biopython
   - matplotlib
   - pandas
+  - scikit-learn
   - xgboost
-  - sklearn
-  
+  - sra-tools
