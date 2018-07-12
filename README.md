@@ -3,6 +3,7 @@
 ## Microbial Communities and Infection
 When exposed to similar bacterial challenges, some people get sick and some don't. Antibiotic use disrupts the gut microbiome and significantly increases susceptibility to gastrointestinal infections, suggesting that healthy gut flora play a role in excluding harmful pathogens.
 
+
 ## What's the problem?
 Currently, the components of the microbiome that determine resistance or susceptibility to infection are not well understood, and streamlined tools for predicting susceptibility are not readily available for researchers or clinicians. Microbiome data, however, is abundant and publicly accessible, making it possible to develop powerful predictive models and identify the biological factors that permit or prevent infection. 
 
