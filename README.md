@@ -1,11 +1,4 @@
-# BadStomach
-Definition of Metagenomic States that predispose individuals to infection
-
 # GoodDoc -- A Template for Simple and Clear Documentation of Bioinformatics Code!
-
-## Please cite our work -- here is the ICMJE Standard Citation:
-
-### ...and a link to the DOI:
 
 ## Awesome Logo
 
@@ -13,21 +6,28 @@ Definition of Metagenomic States that predispose individuals to infection
 
 ## Website (if applicable)
 
-## Intro statement
+## Microbial Communities and Infection
+When exposed to similar bacterial challenges, some people get sick and some don't. Antibiotic use disrupts the gut microbiome and significantly increases susceptibility to gastrointestinal infections, suggesting that healthy gut flora play a role in excluding harmful pathogens.
 
 ## What's the problem?
+Currently, the components of the microbiome that determine resistance or susceptibility to infection are not well understood, and streamlined tools for predicting infection susceptibility are not readily available for clinicians or researchers. Microbiome data, however, is abundant and publicly accessible, making it possible to develop powerful predictive models and
 
 ## Why should we solve it?
+If a patient's susceptibility to infection could be predicted from their gut microbiome before they get sick, patients especially vulnerable to hospital-acquired infection could be screened for susceptibility. Furthermore, if the factors in the gut microbiome that make someone resistant to infection can be identified, probiotic therapies could be designed to maintain that resistant state.
 
-# What is <this software>?
+# What is PrIMP?
+PrIMP (Prediction of Infection-prone Microbiome Pathways) is a workflow for predicting disease states from metagenomic data.  Rather than relying solely on taxonomic classification of the species present in the sample, PrIMP examines 
 
 Overview Diagram
 
-# How to use <this software>
+# How to use PrIMP
+The user provides a set of 16S DNA sequences from healthy patients and from patients in the disease or pre-disease state the user wants to predict. PrIMP will then generate a predictive model that can classify a patient sample as (pre)disease or healthy.
 
 # Software Workflow Diagram
+![Image](PrIMP workflow.png)
 
-# File structure diagram 
+
+# File structure diagram
 #### _Define paths, variable names, etc_
 
 # Installation options:
@@ -55,7 +55,7 @@ The Docker image contains <this software> as well as a webserver and FTP server 
 
 # Testing
 
-We tested four different tools with <this software>. They can be found in [server/tools/](server/tools/) . 
+We tested four different tools with <this software>. They can be found in [server/tools/](server/tools/) .
 
 # Additional Functionality
 
@@ -67,7 +67,7 @@ We tested four different tools with <this software>. They can be found in [serve
   2. `cd server`
   3. `docker build --rm -t <this software>/<this software> .`
   4. `docker run -t -i <this software>/<this software>`
-  
+
 ### Website
 
 There is also a Docker image for hosting the main website. This should only be used for debug purposes.
@@ -76,4 +76,3 @@ There is also a Docker image for hosting the main website. This should only be u
   2. `cd Website`
   3. `docker build --rm -t <this software>/website .`
   4. `docker run -t -i <this software>/website`
-  
