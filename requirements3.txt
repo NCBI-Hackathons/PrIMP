@@ -1,0 +1,6 @@
+biopython
+matplotlib
+pandas
+scikit-learn
+xgboost
+sra-tools

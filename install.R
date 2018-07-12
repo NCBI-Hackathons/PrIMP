@@ -1,0 +1,5 @@
+install.packages("phyloseq")
+install.packages("devtools")
+install.packages("biocLite")
+install.packages("dada2")
+install.packages("biom")
