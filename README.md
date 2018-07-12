@@ -1,24 +1,16 @@
-# GoodDoc -- A Template for Simple and Clear Documentation of Bioinformatics Code!
-
-## Awesome Logo
-
-### You can make a free DOI with zenodo <link>
-
-## Website (if applicable)
+# Prediction of Infection-prone Microbiome Pathways (PrIMP)
 
 ## Microbial Communities and Infection
 When exposed to similar bacterial challenges, some people get sick and some don't. Antibiotic use disrupts the gut microbiome and significantly increases susceptibility to gastrointestinal infections, suggesting that healthy gut flora play a role in excluding harmful pathogens.
 
 ## What's the problem?
-Currently, the components of the microbiome that determine resistance or susceptibility to infection are not well understood, and streamlined tools for predicting infection susceptibility are not readily available for clinicians or researchers. Microbiome data, however, is abundant and publicly accessible, making it possible to develop powerful predictive models and
+Currently, the components of the microbiome that determine resistance or susceptibility to infection are not well understood, and streamlined tools for predicting susceptibility are not readily available for researchers or clinicians. Microbiome data, however, is abundant and publicly accessible, making it possible to develop powerful predictive models and identify the biological factors that permit or prevent infection. 
 
 ## Why should we solve it?
 If a patient's susceptibility to infection could be predicted from their gut microbiome before they get sick, patients especially vulnerable to hospital-acquired infection could be screened for susceptibility. Furthermore, if the factors in the gut microbiome that make someone resistant to infection can be identified, probiotic therapies could be designed to maintain that resistant state.
 
 # What is PrIMP?
-PrIMP (Prediction of Infection-prone Microbiome Pathways) is a workflow for predicting disease states from metagenomic data.  Rather than relying solely on taxonomic classification of the species present in the sample, PrIMP examines 
-
-Overview Diagram
+PrIMP (Prediction of Infection-prone Microbiome Pathways) is a workflow for predicting disease states from metagenomic data.  Rather than relying solely on taxonomic classification of the species present in the sample, PrIMP examines the molecular pathways present in the microbiome. PrIMP is therefore able to identify specific molecular functions that make the microbiome resistant or susceptible to colonization by a pathogen. 
 
 # How to use PrIMP
 The user provides a set of 16S DNA sequences from healthy patients and from patients in the disease or pre-disease state the user wants to predict. PrIMP will then generate a predictive model that can classify a patient sample as (pre)disease or healthy.
