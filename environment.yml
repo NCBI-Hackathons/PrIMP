@@ -7,4 +7,4 @@ dependencies:
   - biopython
   - scikit-learn
   - xgboost
-  
+  - sra-tools
