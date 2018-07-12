@@ -24,7 +24,7 @@ Overview Diagram
 The user provides a set of 16S DNA sequences from healthy patients and from patients in the disease or pre-disease state the user wants to predict. PrIMP will then generate a predictive model that can classify a patient sample as (pre)disease or healthy.
 
 # Software Workflow Diagram
-![Image](PrIMP workflow.png)
+![Image](PrIMP_workflow.png)
 
 
 # File structure diagram
