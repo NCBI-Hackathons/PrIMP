@@ -5,4 +5,8 @@ dependencies:
   - python=2.7
   - picrust
   - biopython
+  - matplotlib
+  - pandas
+  - xgboost
+  - sklearn
   
