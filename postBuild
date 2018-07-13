@@ -1,9 +1,18 @@
 #!/bin/bash
 
-# Create an Environment for Picrust
+# Create an Environment for Picrust and other Python 2 tools
 conda create -n picrustenv python=2.7
 source activate picrustenv
-conda install -c bioconda picrust
+conda install -c bioconda picrust sra-tools entrez-direct biom-format
+
+# Install Ipyrad and dependencies 
+conda install -c ipyrad ipyrad
+conda install -c eaton-lab toytree
+conda install -c conda-forge scikit-allel
+
+# Register the Python 2 (Picrust) as it's own environment
+conda install ipykernel
+python -m ipykernel install --user --name picrustenv --display-name "Python 2 (PICRUSt)"
 
 # Downlaod picrust files
 download_picrust_files.py

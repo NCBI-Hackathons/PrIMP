@@ -9,4 +9,6 @@ dependencies:
   - scikit-learn
   - xgboost
   - sra-tools
+  - pip:
+    - srapy
 
