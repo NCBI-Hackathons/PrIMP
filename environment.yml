@@ -11,4 +11,6 @@ dependencies:
   - sra-tools
   - pip:
     - srapy
+  - scikit-plot
+  - 
 
