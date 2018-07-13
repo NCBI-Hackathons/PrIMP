@@ -9,4 +9,11 @@ dependencies:
   - scikit-learn
   - xgboost
   - sra-tools
+<<<<<<< HEAD
+=======
+  - pip:
+    - srapy
+  - scikit-plot
+  - 
+>>>>>>> origin/master
 
