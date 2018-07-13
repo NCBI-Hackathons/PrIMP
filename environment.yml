@@ -2,11 +2,11 @@ name: badstomach
 channels:
   - bioconda
 dependencies:
-  - python=2.7
-  - picrust
+  - python=3.6
   - biopython
   - matplotlib
   - pandas
   - scikit-learn
   - xgboost
   - sra-tools
+
