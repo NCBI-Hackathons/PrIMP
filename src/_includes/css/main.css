@@ -31,7 +31,7 @@ html { box-sizing: border-box; }
 code, pre { font-family: Monaco, Menlo, Consolas, "Courier New", monospace; }
 
 /* spesifically inline code */
-code, pre {
+code {
   background: rgba(255,255,255,0.2);
   display: inline;
   word-wrap: break-word;
@@ -47,7 +47,7 @@ pre {
   word-wrap: break-word;
 }
 
-.highlight { margin:20px 5%; }
+.highlighttable { margin:20px 5%; }
 
 
 /* ----- base elements ----- */
@@ -135,13 +135,13 @@ nav ul {
 nav ul li {
   display:inline-block;
   border-top:{{navborder}}px solid;
-  padding: {{navborder}}px;
+  padding: {{navborder}}px 10px;
   *display:inline;
   zoom:1;
   line-height:normal;
   letter-spacing:normal;
   text-transform:uppercase;
-  min-width:110px;
+  /*min-width:120px;*/
   line-height:60px;
   margin:0;
 }
@@ -175,6 +175,15 @@ nav ul li:hover, nav ul li.active {
   /* generated noise from noisetexturegenerator.com */
 }
 
+/* fix bg noise for features and download */
+h1#download, h1#features {
+  background:url(img/bgnoise.png);
+}
+
+#install {
+  background:url(img/bgnoise.png);
+}
+
 .section:first-of-type {
     padding-top: 140px;
 }
@@ -196,7 +205,7 @@ nav ul li:hover, nav ul li.active {
   -moz-border-radius:50%;
   -webkit-border-radius:50%;
   box-shadow: 0px 1px 15px rgba(0,0,0,0.05);
-  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAF0lEQVQIHWP8//+/MQMaYELjg7kUCgIASm8DOqGzfp8AAAAASUVORK5CYII=);
+  background:url('img/white.png');
 }
 
 .sectiondivider {
@@ -257,7 +266,57 @@ nav ul li:hover, nav ul li.active {
 .longlist { font-size: 14px !important; }
 .longlist li { margin-bottom: 3px; }
 
+.row.display-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row.display-flex > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
 
+.feature-icon {
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+.feature-title {
+    text-align: center;
+    font-size: 140%;
+    font-weight: bold;
+}
+
+.feature-body {
+    text-align: justify;
+    margin-top: 5px !important;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.button {
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #29AEB9;
+    margin: 0 5px;
+}
+
+.button:hover {
+    cursor:pointer;
+    background-color: #1F8591;
+}
+
+.button a {
+    text-decoration: none;
+    color: white !important;
+}
 
 /* ----- fork on github banner ----- */
 #forkongithub a {
@@ -354,4 +413,27 @@ nav ul li:hover, nav ul li.active {
     -moz-column-count:    2;
     column-count:         2;
   }
+}
+
+.center{
+    text-align:center;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-Regular.ttf') format('truetype');
+}
+
+/* octocat */
+#octocat {
+    fill:#fff; color:#2E2E2E; position: absolute; top: 0; border: 0; right: 0;
+}
+.github-corner:hover .octo-arm{
+animation:octocat-wave 560ms ease-in-out;
+transform-origin: 130px 106px;
+}
+@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}
+
+[class*=' col-'] {
+    margin-bottom: 25px;
 }

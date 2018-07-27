@@ -2,26 +2,25 @@
 
 port: 4000
 host: 0.0.0.0
-safe: false
-
+safe: true
 
 ### site serving configuration ###
-exclude: [CNAME, README.md, .gitignore]
-permalink: / ## disables post output
+#exclude: [README.md, .gitignore]
+permalink: /:slug
 timezone: null
 lsi: false
 markdown: kramdown
-
+highlighter: rouge
 
 ### content configuration ###
-title:       "PrIMP - Prediction of Infection-prone Microbiome Pathways"
-keywords:    "PrIMP, Metagenomics, Microbiome, Qiime, Pathways"
-description: "A python- and R-based toolkit for the predictive analysis of infection-prone microbiome pathways"
-source_link: "https://github.com/NCBI-Hackathons/PrIMP"
-favicon:     "img/favicon.png"
-touch_icon:  "img/touch_icon.png"
-google_analytics_key: ## put YOUR key here to enable tracking! (blank to disable)
-
+title:       "eLabFTW - free open source ELN"
+keywords:    "electronic, laboratory, notebook, research, lab, database, manager"
+description: "A free and open source electronic lab notebook for researchers."
+source_link: "https://github.com/elabftw/elabweb"
+favicon:     "img/favicon.ico"
+touch_icon:  "img/apple-touch-icon.png"
+# put your key here to enable tracking! (blank to disable)
+google_analytics_key: "UA-50763178-1"
 
 ### template colors, used site-wide via css ###
 colors:
@@ -34,7 +33,3 @@ colors:
   turquoise: '#0fbfcf'
   red:       '#d9534f'
   grey:      '#343434'
-
-kramdown:
-  auto_ids:  false
-

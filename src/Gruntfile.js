@@ -13,7 +13,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'primp.min.js': [
+          'elabweb.min.js': [
                 'node_modules/jquery/dist/jquery.js',
                 'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
                 '_includes/js/site.js'
