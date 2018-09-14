@@ -2,3 +2,5 @@ notebooks/.ipynb_checkpoints
 images
 README.md
 LICENSE
+data/fastq/
+data/fastq_filtered/

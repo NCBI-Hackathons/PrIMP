@@ -1,2 +1,3 @@
-data/fastq*
+data/fastq/
+data/fastq_filtered/
 notebooks/.ipynb_checkpoints
