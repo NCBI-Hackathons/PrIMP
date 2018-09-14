@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  primp_notebook:
+    build: .
+    ports:
+      - ${PORT}:8888
+    environment:
+      - JUPYTER_ENABLE_LAB=1
+    volumes:
+      - ${LOCAL_WORKING_DIR}:/home/jovyan/notebooks
+      - ${LOCAL_DATASETS}:/home/jovyan/data
+    container_name: primp_container
+    command: start-notebook.sh

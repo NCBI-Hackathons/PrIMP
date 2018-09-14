@@ -1,7 +1,0 @@
-install.packages("devtools")
-install.packages("biocLite")
-install.packages("themetagenomics")
-source("https://bioconductor.org/biocLite.R")
-biocLite("dada2")
-biocLite("phyloseq")
-biocLite("biom")
