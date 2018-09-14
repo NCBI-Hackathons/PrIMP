@@ -36,16 +36,16 @@ We provide three options for using PrIMP: installation from Docker, installation
 
 ### DockerFile
 
-PrIMP can be built into a Docker image using repo2docker.
+PrIMP comes with a Dockerfile for easy building.
 
   1. `git clone https://github.com/NCBI-Hackathons/PrIMP.git`
-  2. `jupyter-repo2docker PrIMP`
-  3. Follow link given by repo2docker in web browser.
+  2. `docker build .`
+  3. Follow link given by docker in web browser.
 
 ### Binder
 
 This repo can be viewed as a JupyterLab Binder (a development environment with all dependencies pre-installed) here:
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/NCBI-Hackathons/PrIMP/59be8ca?urlpath=lab) or as an R-studio environment [here](https://mybinder.org/v2/gh/NCBI-Hackathons/PrIMP/59be8ca?urlpath=rstudio).
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/NCBI-Hackathons/PrIMP/dc208d4?urlpath=lab) or as an R-studio environment [here](https://mybinder.org/v2/gh/NCBI-Hackathons/PrIMP/dc208d4?urlpath=rstudio).
 
 ### Example Results
 
